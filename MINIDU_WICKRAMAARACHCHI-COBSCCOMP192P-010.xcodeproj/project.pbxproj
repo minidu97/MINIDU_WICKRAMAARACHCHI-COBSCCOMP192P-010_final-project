@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03FC8FC343E3FC2766992292 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FA8F500E91666D474BF461 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.framework */; };
+		8FFFE16F5CEAD9B65F8C860D /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA052A757C538A79E483A9B8 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework */; };
+		9216EE20262EBD15002A8E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */; };
+		9216EE21262EBD15002A8E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */; };
+		9216EE22262EBD15002A8E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */; };
+		922A9403262EB3A300AB0EED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9402262EB3A300AB0EED /* LoginViewController.swift */; };
+		9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246F432262EB6E200AD4315 /* SignUpViewController.swift */; };
 		92E148A2262EA8BE000C91BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A1262EA8BE000C91BE /* AppDelegate.swift */; };
 		92E148A4262EA8BE000C91BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A3262EA8BE000C91BE /* SceneDelegate.swift */; };
 		92E148A6262EA8BE000C91BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A5262EA8BE000C91BE /* ViewController.swift */; };
@@ -16,6 +23,7 @@
 		92E148B1262EA8BF000C91BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E148AF262EA8BF000C91BE /* LaunchScreen.storyboard */; };
 		92E148BC262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148BB262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.swift */; };
 		92E148C7262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148C6262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift */; };
+		EC5C271DA4DB3DB760998D78 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BC846F4DB624B75D1D17A3 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29BC846F4DB624B75D1D17A3 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FA8F500E91666D474BF461 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		498F0EE4C6400FFD38AB540F /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.debug.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E8DB5B6C7F698C7B314C004 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.release.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.release.xcconfig"; sourceTree = "<group>"; };
+		5ABF5EE50BF8E86BA1296732 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7AC7235A6F48EF6A5C005B78 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		922A9402262EB3A300AB0EED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9246F432262EB6E200AD4315 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		92E1489E262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E148A1262EA8BE000C91BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92E148A3262EA8BE000C91BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +68,9 @@
 		92E148C2262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E148C6262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift; sourceTree = "<group>"; };
 		92E148C8262EA8BF000C91BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA052A757C538A79E483A9B8 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AF823DC8A2D6358575656B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E241EE3E985D6B930BCAE12B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FC8FC343E3FC2766992292 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5C271DA4DB3DB760998D78 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +94,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFFE16F5CEAD9B65F8C860D /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		796E4BE78D560AF88AD1D697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33FA8F500E91666D474BF461 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.framework */,
+				BA052A757C538A79E483A9B8 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework */,
+				29BC846F4DB624B75D1D17A3 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		922A93FE262EB38A00AB0EED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				922A9402262EB3A300AB0EED /* LoginViewController.swift */,
+				9246F432262EB6E200AD4315 /* SignUpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		92E14895262EA8BE000C91BE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +127,8 @@
 				92E148BA262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests */,
 				92E148C5262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests */,
 				92E1489F262EA8BE000C91BE /* Products */,
+				94EC3909A4DE6F7A4B3925A0 /* Pods */,
+				796E4BE78D560AF88AD1D697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +145,7 @@
 		92E148A0262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010 */ = {
 			isa = PBXGroup;
 			children = (
+				922A93FE262EB38A00AB0EED /* Controllers */,
 				92E148A1262EA8BE000C91BE /* AppDelegate.swift */,
 				92E148A3262EA8BE000C91BE /* SceneDelegate.swift */,
 				92E148A5262EA8BE000C91BE /* ViewController.swift */,
@@ -108,6 +153,7 @@
 				92E148AD262EA8BF000C91BE /* Assets.xcassets */,
 				92E148AF262EA8BF000C91BE /* LaunchScreen.storyboard */,
 				92E148B2262EA8BF000C91BE /* Info.plist */,
+				9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */,
 				92E148AA262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.xcdatamodeld */,
 			);
 			path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010";
@@ -131,6 +177,19 @@
 			path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests";
 			sourceTree = "<group>";
 		};
+		94EC3909A4DE6F7A4B3925A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E241EE3E985D6B930BCAE12B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig */,
+				4E8DB5B6C7F698C7B314C004 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.release.xcconfig */,
+				498F0EE4C6400FFD38AB540F /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.debug.xcconfig */,
+				C1AF823DC8A2D6358575656B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig */,
+				7AC7235A6F48EF6A5C005B78 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig */,
+				5ABF5EE50BF8E86BA1296732 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E148CB262EA8BF000C91BE /* Build configuration list for PBXNativeTarget "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010" */;
 			buildPhases = (
+				B226A42B3186DF4E46708AC5 /* [CP] Check Pods Manifest.lock */,
 				92E1489A262EA8BE000C91BE /* Sources */,
 				92E1489B262EA8BE000C91BE /* Frameworks */,
 				92E1489C262EA8BE000C91BE /* Resources */,
+				4F4E35E35A5225530111A34F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E148CE262EA8BF000C91BE /* Build configuration list for PBXNativeTarget "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests" */;
 			buildPhases = (
+				CDD4D60176B33B0DEFF4E7AD /* [CP] Check Pods Manifest.lock */,
 				92E148B3262EA8BF000C91BE /* Sources */,
 				92E148B4262EA8BF000C91BE /* Frameworks */,
 				92E148B5262EA8BF000C91BE /* Resources */,
@@ -173,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E148D1262EA8BF000C91BE /* Build configuration list for PBXNativeTarget "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests" */;
 			buildPhases = (
+				0D29248BF4F2A268F6CDE640 /* [CP] Check Pods Manifest.lock */,
 				92E148BE262EA8BF000C91BE /* Sources */,
 				92E148BF262EA8BF000C91BE /* Frameworks */,
 				92E148C0262EA8BF000C91BE /* Resources */,
+				0991988F3E706C384BD3A793 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E148B1262EA8BF000C91BE /* LaunchScreen.storyboard in Resources */,
+				9216EE20262EBD15002A8E3C /* GoogleService-Info.plist in Resources */,
 				92E148AE262EA8BF000C91BE /* Assets.xcassets in Resources */,
 				92E148A9262EA8BE000C91BE /* Main.storyboard in Resources */,
 			);
@@ -244,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9216EE21262EBD15002A8E3C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,19 +317,125 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9216EE22262EBD15002A8E3C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0991988F3E706C384BD3A793 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D29248BF4F2A268F6CDE640 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F4E35E35A5225530111A34F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B226A42B3186DF4E46708AC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD4D60176B33B0DEFF4E7AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92E1489A262EA8BE000C91BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */,
 				92E148A6262EA8BE000C91BE /* ViewController.swift in Sources */,
 				92E148AC262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.xcdatamodeld in Sources */,
 				92E148A2262EA8BE000C91BE /* AppDelegate.swift in Sources */,
+				922A9403262EB3A300AB0EED /* LoginViewController.swift in Sources */,
 				92E148A4262EA8BE000C91BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +609,7 @@
 		};
 		92E148CC262EA8BF000C91BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E241EE3E985D6B930BCAE12B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +628,7 @@
 		};
 		92E148CD262EA8BF000C91BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8DB5B6C7F698C7B314C004 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +647,7 @@
 		};
 		92E148CF262EA8BF000C91BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC7235A6F48EF6A5C005B78 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +669,7 @@
 		};
 		92E148D0262EA8BF000C91BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABF5EE50BF8E86BA1296732 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +691,7 @@
 		};
 		92E148D2262EA8BF000C91BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 498F0EE4C6400FFD38AB540F /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +711,7 @@
 		};
 		92E148D3262EA8BF000C91BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1AF823DC8A2D6358575656B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
