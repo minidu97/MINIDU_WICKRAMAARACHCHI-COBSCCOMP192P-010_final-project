@@ -263,6 +263,78 @@
             </objects>
             <point key="canvasLocation" x="1712" y="119"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="q99-5Y-FT8">
+            <objects>
+                <viewController id="ggX-Cc-rYQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJm-bf-dbE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pCx-e8-JDK">
+                                <rect key="frame" x="20" y="262" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QJq-V4-z0N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafê manager" translatesAutoresizingMaskIntoConstraints="NO" id="HOm-NA-2rP">
+                                <rect key="frame" x="87" y="114" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Gf4-Qg-1lY"/>
+                                    <constraint firstAttribute="width" constant="240" id="s32-dr-FOq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF1-SR-wwG">
+                                <rect key="frame" x="40" y="322" width="334" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Fi-RI-86q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Get Password">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJl-cm-BiN">
+                                <rect key="frame" x="40" y="382" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.78444630829999995" green="0.78444630829999995" blue="0.78444630829999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ect-fe-gOn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="25K-7r-XG7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RJl-cm-BiN" firstAttribute="leading" secondItem="iJm-bf-dbE" secondAttribute="leading" constant="40" id="5gA-Pf-KUu"/>
+                            <constraint firstItem="RJl-cm-BiN" firstAttribute="top" secondItem="EF1-SR-wwG" secondAttribute="bottom" constant="20" id="7Vx-vt-eNj"/>
+                            <constraint firstItem="EF1-SR-wwG" firstAttribute="top" secondItem="pCx-e8-JDK" secondAttribute="bottom" constant="20" id="A3z-ah-UrY"/>
+                            <constraint firstItem="25K-7r-XG7" firstAttribute="trailing" secondItem="EF1-SR-wwG" secondAttribute="trailing" constant="40" id="BfK-9B-iXL"/>
+                            <constraint firstItem="HOm-NA-2rP" firstAttribute="centerX" secondItem="25K-7r-XG7" secondAttribute="centerX" id="Cwj-to-h3p"/>
+                            <constraint firstItem="EF1-SR-wwG" firstAttribute="leading" secondItem="iJm-bf-dbE" secondAttribute="leading" constant="40" id="Ft1-hT-869"/>
+                            <constraint firstItem="25K-7r-XG7" firstAttribute="trailing" secondItem="RJl-cm-BiN" secondAttribute="trailing" constant="40" id="N71-va-tv4"/>
+                            <constraint firstItem="pCx-e8-JDK" firstAttribute="leading" secondItem="iJm-bf-dbE" secondAttribute="leading" constant="20" id="RcU-N3-P2j"/>
+                            <constraint firstItem="pCx-e8-JDK" firstAttribute="top" secondItem="HOm-NA-2rP" secondAttribute="bottom" constant="20" id="SoG-xj-XYU"/>
+                            <constraint firstItem="HOm-NA-2rP" firstAttribute="top" secondItem="25K-7r-XG7" secondAttribute="top" constant="70" id="gcf-jO-gBr"/>
+                            <constraint firstItem="25K-7r-XG7" firstAttribute="trailing" secondItem="pCx-e8-JDK" secondAttribute="trailing" constant="20" id="xes-In-ysh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thf-Si-cm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517" y="119"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cafê manager" width="48" height="48"/>
