@@ -29,6 +29,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgetpwbtn(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ForgetPW" )
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     func validate(){
         if email.text?.isEmpty == true{

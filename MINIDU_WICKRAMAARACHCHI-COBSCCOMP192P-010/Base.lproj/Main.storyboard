@@ -263,10 +263,10 @@
             </objects>
             <point key="canvasLocation" x="1712" y="119"/>
         </scene>
-        <!--View Controller-->
+        <!--Forget Password View Controller-->
         <scene sceneID="q99-5Y-FT8">
             <objects>
-                <viewController id="ggX-Cc-rYQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgetPW" id="ggX-Cc-rYQ" customClass="ForgetPasswordViewController" customModule="MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJm-bf-dbE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,6 +301,9 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getpw:" destination="ggX-Cc-rYQ" eventType="touchUpInside" id="XaM-Ag-FWK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJl-cm-BiN">
                                 <rect key="frame" x="40" y="382" width="334" height="40"/>
@@ -312,6 +315,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelbtn:" destination="ggX-Cc-rYQ" eventType="touchUpInside" id="hp0-mr-YHG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="25K-7r-XG7"/>
@@ -330,10 +336,13 @@
                             <constraint firstItem="25K-7r-XG7" firstAttribute="trailing" secondItem="pCx-e8-JDK" secondAttribute="trailing" constant="20" id="xes-In-ysh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="pCx-e8-JDK" id="joU-tn-Qqr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thf-Si-cm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2517" y="119"/>
+            <point key="canvasLocation" x="896" y="812"/>
         </scene>
     </scenes>
     <resources>
