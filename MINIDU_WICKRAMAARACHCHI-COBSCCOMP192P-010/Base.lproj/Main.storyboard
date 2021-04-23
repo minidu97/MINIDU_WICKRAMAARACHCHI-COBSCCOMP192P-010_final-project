@@ -248,20 +248,74 @@
             </objects>
             <point key="canvasLocation" x="896" y="119"/>
         </scene>
-        <!--View Controller-->
+        <!--Store-->
         <scene sceneID="qCM-B0-zTz">
             <objects>
-                <viewController storyboardIdentifier="menu" id="Aha-j5-rh6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Store" id="Aha-j5-rh6" customClass="StoreViewController" customModule="MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fa6-pc-h8d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2WS-PX-qMY">
+                                <rect key="frame" x="75.5" y="44" width="263" height="32"/>
+                                <segments>
+                                    <segment title="Preview"/>
+                                    <segment title="Catogary +"/>
+                                    <segment title="Menu +"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentChange:" destination="Aha-j5-rh6" eventType="valueChanged" id="e8x-nB-kwQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjJ-gL-gXc">
+                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <connections>
+                                    <segue destination="ltq-tn-PbQ" kind="embed" id="If7-kv-V1D"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-yt-aBb">
+                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
+                                <connections>
+                                    <segue destination="ozA-3q-3Ut" kind="embed" id="vni-d8-MsL"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-F4-xg9">
+                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
+                                <connections>
+                                    <segue destination="H1d-Vn-yT4" kind="embed" id="agE-cL-vhc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lAQ-Mg-3oi"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2WS-PX-qMY" firstAttribute="top" secondItem="lAQ-Mg-3oi" secondAttribute="top" id="0N0-ZR-DbB"/>
+                            <constraint firstItem="CjJ-gL-gXc" firstAttribute="leading" secondItem="lAQ-Mg-3oi" secondAttribute="leading" id="BWK-5Q-Dlc"/>
+                            <constraint firstItem="ArK-F4-xg9" firstAttribute="top" secondItem="2WS-PX-qMY" secondAttribute="bottom" constant="5" id="Imv-30-wAZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ivr-yt-aBb" secondAttribute="bottom" constant="83" id="QtK-Vx-Ys0"/>
+                            <constraint firstItem="ivr-yt-aBb" firstAttribute="leading" secondItem="lAQ-Mg-3oi" secondAttribute="leading" id="UEA-x9-ny9"/>
+                            <constraint firstItem="ArK-F4-xg9" firstAttribute="trailing" secondItem="lAQ-Mg-3oi" secondAttribute="trailing" id="VYs-sU-LTc"/>
+                            <constraint firstItem="ivr-yt-aBb" firstAttribute="trailing" secondItem="lAQ-Mg-3oi" secondAttribute="trailing" id="Yzg-3C-ELJ"/>
+                            <constraint firstItem="CjJ-gL-gXc" firstAttribute="trailing" secondItem="lAQ-Mg-3oi" secondAttribute="trailing" id="i3S-bi-IlO"/>
+                            <constraint firstAttribute="bottom" secondItem="ArK-F4-xg9" secondAttribute="bottom" constant="83" id="iXz-IS-2Py"/>
+                            <constraint firstItem="ivr-yt-aBb" firstAttribute="top" secondItem="2WS-PX-qMY" secondAttribute="bottom" constant="5" id="lNM-iY-jWe"/>
+                            <constraint firstAttribute="bottom" secondItem="CjJ-gL-gXc" secondAttribute="bottom" constant="83" id="n2m-hh-RSA"/>
+                            <constraint firstItem="2WS-PX-qMY" firstAttribute="centerX" secondItem="lAQ-Mg-3oi" secondAttribute="centerX" id="ofY-yd-OYF"/>
+                            <constraint firstItem="ArK-F4-xg9" firstAttribute="leading" secondItem="lAQ-Mg-3oi" secondAttribute="leading" id="rdz-tx-RUH"/>
+                            <constraint firstItem="CjJ-gL-gXc" firstAttribute="top" secondItem="2WS-PX-qMY" secondAttribute="bottom" constant="5" id="vmJ-14-M8Z"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Store" id="uQ0-DE-N44"/>
+                    <connections>
+                        <outlet property="Catogary" destination="ivr-yt-aBb" id="aV3-GI-0n9"/>
+                        <outlet property="Menu" destination="ArK-F4-xg9" id="6rj-MN-mAE"/>
+                        <outlet property="Preview" destination="CjJ-gL-gXc" id="DQs-RX-rJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xgi-EQ-Iiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1712" y="119"/>
+            <point key="canvasLocation" x="2621.739130434783" y="118.52678571428571"/>
         </scene>
         <!--Forget Password View Controller-->
         <scene sceneID="q99-5Y-FT8">
@@ -344,6 +398,99 @@
             </objects>
             <point key="canvasLocation" x="896" y="812"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="N9B-0c-W7u">
+            <objects>
+                <tabBarController storyboardIdentifier="menu" automaticallyAdjustsScrollViewInsets="NO" id="U1s-rK-PCW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DmX-id-HAw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Aha-j5-rh6" kind="relationship" relationship="viewControllers" id="rFp-W9-sB0"/>
+                        <segue destination="bNT-YF-d0t" kind="relationship" relationship="viewControllers" id="eXN-0c-Mt2"/>
+                        <segue destination="1rk-jp-bZv" kind="relationship" relationship="viewControllers" id="a7b-FD-G6n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zV1-LD-Xhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="119"/>
+        </scene>
+        <!--Order-->
+        <scene sceneID="eDf-1z-Otr">
+            <objects>
+                <viewController storyboardIdentifier="Order" id="bNT-YF-d0t" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VPW-2R-wba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OQu-ve-f74"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Order" id="lOw-s3-FDU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsQ-8F-5IB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="823"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="ifk-FN-Kan">
+            <objects>
+                <viewController storyboardIdentifier="Account" id="1rk-jp-bZv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u9i-K6-T4H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cUf-Uh-w2K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" id="fgP-rC-lYR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snq-rt-Tun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="823"/>
+        </scene>
+        <!--Preview-->
+        <scene sceneID="37t-Ih-8tT">
+            <objects>
+                <viewController title="Preview" id="ltq-tn-PbQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPT-5L-hXw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="733"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COA-h9-U6K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3461" y="-447"/>
+        </scene>
+        <!--Catogary +-->
+        <scene sceneID="Gzl-J1-Of7">
+            <objects>
+                <viewController title="Catogary +" id="ozA-3q-3Ut" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GRc-hC-DaN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="733"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sj-Oi-66C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3461" y="649"/>
+        </scene>
+        <!--Menu +-->
+        <scene sceneID="Nlq-UD-R7l">
+            <objects>
+                <viewController title="Menu +" id="H1d-Vn-yT4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l6w-QS-MbR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="733"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNz-aF-MqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3461" y="95"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cafê manager" width="48" height="48"/>
@@ -358,6 +505,15 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
