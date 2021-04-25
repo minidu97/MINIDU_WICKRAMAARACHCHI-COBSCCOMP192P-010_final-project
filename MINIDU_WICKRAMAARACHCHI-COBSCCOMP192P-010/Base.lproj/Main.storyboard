@@ -654,14 +654,26 @@
                     <view key="view" contentMode="scaleToFill" id="u9i-K6-T4H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F5L-uZ-IVX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cUf-Uh-w2K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="F5L-uZ-IVX" secondAttribute="bottom" constant="83" id="PsF-fY-jKi"/>
+                            <constraint firstItem="F5L-uZ-IVX" firstAttribute="leading" secondItem="cUf-Uh-w2K" secondAttribute="leading" id="Qgz-2A-QSk"/>
+                            <constraint firstItem="F5L-uZ-IVX" firstAttribute="trailing" secondItem="cUf-Uh-w2K" secondAttribute="trailing" id="Vuq-CG-Pga"/>
+                            <constraint firstItem="F5L-uZ-IVX" firstAttribute="top" secondItem="u9i-K6-T4H" secondAttribute="top" constant="44" id="qfF-40-hF2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" id="fgP-rC-lYR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snq-rt-Tun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="823"/>
+            <point key="canvasLocation" x="2621.739130434783" y="822.99107142857144"/>
         </scene>
         <!--Preview-->
         <scene sceneID="37t-Ih-8tT">
