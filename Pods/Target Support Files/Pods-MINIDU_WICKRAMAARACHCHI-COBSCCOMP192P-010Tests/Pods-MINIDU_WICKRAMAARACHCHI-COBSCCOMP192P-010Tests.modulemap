@@ -1,0 +1,6 @@
+framework module Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests {
+  umbrella header "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
