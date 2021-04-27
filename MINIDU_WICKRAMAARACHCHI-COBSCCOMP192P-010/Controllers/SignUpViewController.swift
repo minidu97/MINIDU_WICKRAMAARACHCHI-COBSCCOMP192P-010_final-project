@@ -16,6 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phonenumber: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmpw: UITextField!
+    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -85,6 +86,15 @@ class SignUpViewController: UIViewController {
                                 }
                               }
                 print("User signs up successfully")
+                let newUserInfo = Auth.auth().currentUser
+                let email = newUserInfo?.email
+                self.ref = Database.database().reference()
+                self.ref.child("users").child(self.phonenumber.text ?? "0").setValue(["email": self.email.text!])
+                if let error = error {
+                    let alert = UIAlertController(title: "Failed", message: "Please Meet Your Service Provider", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    return
+                }
             let alertController: UIAlertController = UIAlertController(title: "Success", message: "User Registration is Successful", preferredStyle: .alert)
                       let okAction: UIAlertAction = UIAlertAction(title: "OK", style: .default) { action -> Void in
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)

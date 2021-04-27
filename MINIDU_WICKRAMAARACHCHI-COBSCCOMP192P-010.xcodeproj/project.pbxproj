@@ -12,10 +12,18 @@
 		9216EE20262EBD15002A8E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */; };
 		9216EE21262EBD15002A8E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */; };
 		9216EE22262EBD15002A8E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */; };
+		921DF3FB26368AF50081D3EF /* CatogaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DF3FA26368AF50081D3EF /* CatogaryViewController.swift */; };
+		921DF40026368C270081D3EF /* CatogaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DF3FF26368C270081D3EF /* CatogaryTableViewCell.swift */; };
 		922A9403262EB3A300AB0EED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9402262EB3A300AB0EED /* LoginViewController.swift */; };
+		923190ED2637175C00705CA5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923190EC2637175C00705CA5 /* PreviewViewController.swift */; };
+		923190F22637179100705CA5 /* PreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923190F12637179100705CA5 /* PreviewTableViewCell.swift */; };
 		9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246F432262EB6E200AD4315 /* SignUpViewController.swift */; };
 		9273D7F5262EC20400D72707 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273D7F4262EC20400D72707 /* ForgetPasswordViewController.swift */; };
 		928F070F26328FBB0056DC46 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928F070E26328FBB0056DC46 /* StoreViewController.swift */; };
+		92AB4E842637F77D000B50D5 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB4E832637F77D000B50D5 /* OrdersViewController.swift */; };
+		92AB4E892637F7A2000B50D5 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB4E882637F7A2000B50D5 /* OrderTableViewCell.swift */; };
+		92D5A1312637CDEE002B47BF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5A1302637CDEE002B47BF /* CheckBox.swift */; };
+		92D5A1392637CED8002B47BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5A1382637CED8002B47BF /* MenuViewController.swift */; };
 		92E148A2262EA8BE000C91BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A1262EA8BE000C91BE /* AppDelegate.swift */; };
 		92E148A4262EA8BE000C91BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A3262EA8BE000C91BE /* SceneDelegate.swift */; };
 		92E148A6262EA8BE000C91BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A5262EA8BE000C91BE /* ViewController.swift */; };
@@ -53,10 +61,18 @@
 		5ABF5EE50BF8E86BA1296732 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7AC7235A6F48EF6A5C005B78 /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9216EE1F262EBD15002A8E3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		921DF3FA26368AF50081D3EF /* CatogaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatogaryViewController.swift; sourceTree = "<group>"; };
+		921DF3FF26368C270081D3EF /* CatogaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatogaryTableViewCell.swift; sourceTree = "<group>"; };
 		922A9402262EB3A300AB0EED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		923190EC2637175C00705CA5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		923190F12637179100705CA5 /* PreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTableViewCell.swift; sourceTree = "<group>"; };
 		9246F432262EB6E200AD4315 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9273D7F4262EC20400D72707 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		928F070E26328FBB0056DC46 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		92AB4E832637F77D000B50D5 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		92AB4E882637F7A2000B50D5 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		92D5A1302637CDEE002B47BF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		92D5A1382637CED8002B47BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		92E1489E262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E148A1262EA8BE000C91BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92E148A3262EA8BE000C91BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,8 +138,23 @@
 				9246F432262EB6E200AD4315 /* SignUpViewController.swift */,
 				9273D7F4262EC20400D72707 /* ForgetPasswordViewController.swift */,
 				928F070E26328FBB0056DC46 /* StoreViewController.swift */,
+				921DF3FA26368AF50081D3EF /* CatogaryViewController.swift */,
+				921DF3FF26368C270081D3EF /* CatogaryTableViewCell.swift */,
+				923190EC2637175C00705CA5 /* PreviewViewController.swift */,
+				923190F12637179100705CA5 /* PreviewTableViewCell.swift */,
+				92D5A1382637CED8002B47BF /* MenuViewController.swift */,
+				92AB4E832637F77D000B50D5 /* OrdersViewController.swift */,
+				92AB4E882637F7A2000B50D5 /* OrderTableViewCell.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92D5A12F2637CDC2002B47BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92D5A1302637CDEE002B47BF /* CheckBox.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		92E14895262EA8BE000C91BE = {
@@ -151,6 +182,7 @@
 		92E148A0262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010 */ = {
 			isa = PBXGroup;
 			children = (
+				92D5A12F2637CDC2002B47BF /* Classes */,
 				922A93FE262EB38A00AB0EED /* Controllers */,
 				92E148A1262EA8BE000C91BE /* AppDelegate.swift */,
 				92E148A3262EA8BE000C91BE /* SceneDelegate.swift */,
@@ -437,14 +469,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921DF3FB26368AF50081D3EF /* CatogaryViewController.swift in Sources */,
 				928F070F26328FBB0056DC46 /* StoreViewController.swift in Sources */,
+				92AB4E892637F7A2000B50D5 /* OrderTableViewCell.swift in Sources */,
 				9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */,
+				92D5A1392637CED8002B47BF /* MenuViewController.swift in Sources */,
 				92E148A6262EA8BE000C91BE /* ViewController.swift in Sources */,
+				923190ED2637175C00705CA5 /* PreviewViewController.swift in Sources */,
 				92E148AC262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010.xcdatamodeld in Sources */,
+				923190F22637179100705CA5 /* PreviewTableViewCell.swift in Sources */,
 				92E148A2262EA8BE000C91BE /* AppDelegate.swift in Sources */,
 				9273D7F5262EC20400D72707 /* ForgetPasswordViewController.swift in Sources */,
+				92AB4E842637F77D000B50D5 /* OrdersViewController.swift in Sources */,
 				922A9403262EB3A300AB0EED /* LoginViewController.swift in Sources */,
 				92E148A4262EA8BE000C91BE /* SceneDelegate.swift in Sources */,
+				92D5A1312637CDEE002B47BF /* CheckBox.swift in Sources */,
+				921DF40026368C270081D3EF /* CatogaryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
