@@ -67,6 +67,14 @@ class OrdersViewController: UIViewController , UITableViewDelegate, UITableViewD
         catogaryCell.OrderId.text = self.orders[indexPath.row].OrderId;
             return catogaryCell;
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UserDefaults.standard.set(self.orders[indexPath.row].OrderId, forKey: "OrderId")
+        UserDefaults.standard.set(self.orders[indexPath.row].CustomerName, forKey: "CustomerName")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "OrderInfoView" )
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
 
     /*
     // MARK: - Navigation

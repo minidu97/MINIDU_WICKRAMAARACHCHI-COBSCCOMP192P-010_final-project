@@ -7,12 +7,14 @@
 
 import UIKit
 
-class PreviewViewController: UIViewController {
+
+class PreviewViewController: UIViewController{
 
     @IBOutlet weak var PreviewTable: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     

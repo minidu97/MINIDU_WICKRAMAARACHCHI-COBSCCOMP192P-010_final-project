@@ -22,6 +22,8 @@
 		928F070F26328FBB0056DC46 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928F070E26328FBB0056DC46 /* StoreViewController.swift */; };
 		92AB4E842637F77D000B50D5 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB4E832637F77D000B50D5 /* OrdersViewController.swift */; };
 		92AB4E892637F7A2000B50D5 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB4E882637F7A2000B50D5 /* OrderTableViewCell.swift */; };
+		92AB4E8E26382A29000B50D5 /* OrderInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB4E8D26382A29000B50D5 /* OrderInfoViewController.swift */; };
+		92AB4E9326382A73000B50D5 /* OrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB4E9226382A73000B50D5 /* OrderInfoTableViewCell.swift */; };
 		92D5A1312637CDEE002B47BF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5A1302637CDEE002B47BF /* CheckBox.swift */; };
 		92D5A1392637CED8002B47BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5A1382637CED8002B47BF /* MenuViewController.swift */; };
 		92E148A2262EA8BE000C91BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148A1262EA8BE000C91BE /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 		92E148B1262EA8BF000C91BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E148AF262EA8BF000C91BE /* LaunchScreen.storyboard */; };
 		92E148BC262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148BB262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.swift */; };
 		92E148C7262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E148C6262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift */; };
+		92FFA97626392CCD00CC36A8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FFA97526392CCD00CC36A8 /* AccountViewController.swift */; };
+		92FFA98C2639437600CC36A8 /* Level1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FFA98B2639437600CC36A8 /* Level1TableViewCell.swift */; };
 		EC5C271DA4DB3DB760998D78 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BC846F4DB624B75D1D17A3 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,8 @@
 		928F070E26328FBB0056DC46 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		92AB4E832637F77D000B50D5 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		92AB4E882637F7A2000B50D5 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		92AB4E8D26382A29000B50D5 /* OrderInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoViewController.swift; sourceTree = "<group>"; };
+		92AB4E9226382A73000B50D5 /* OrderInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		92D5A1302637CDEE002B47BF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		92D5A1382637CED8002B47BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		92E1489E262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +94,8 @@
 		92E148C2262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E148C6262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.swift; sourceTree = "<group>"; };
 		92E148C8262EA8BF000C91BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FFA97526392CCD00CC36A8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		92FFA98B2639437600CC36A8 /* Level1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1TableViewCell.swift; sourceTree = "<group>"; };
 		BA052A757C538A79E483A9B8 /* Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010_MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AF823DC8A2D6358575656B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010UITests.release.xcconfig"; sourceTree = "<group>"; };
 		E241EE3E985D6B930BCAE12B /* Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig"; path = "Target Support Files/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010/Pods-MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +153,10 @@
 				92D5A1382637CED8002B47BF /* MenuViewController.swift */,
 				92AB4E832637F77D000B50D5 /* OrdersViewController.swift */,
 				92AB4E882637F7A2000B50D5 /* OrderTableViewCell.swift */,
+				92AB4E8D26382A29000B50D5 /* OrderInfoViewController.swift */,
+				92AB4E9226382A73000B50D5 /* OrderInfoTableViewCell.swift */,
+				92FFA97526392CCD00CC36A8 /* AccountViewController.swift */,
+				92FFA98B2639437600CC36A8 /* Level1TableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -469,9 +481,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FFA98C2639437600CC36A8 /* Level1TableViewCell.swift in Sources */,
 				921DF3FB26368AF50081D3EF /* CatogaryViewController.swift in Sources */,
 				928F070F26328FBB0056DC46 /* StoreViewController.swift in Sources */,
 				92AB4E892637F7A2000B50D5 /* OrderTableViewCell.swift in Sources */,
+				92AB4E8E26382A29000B50D5 /* OrderInfoViewController.swift in Sources */,
 				9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */,
 				92D5A1392637CED8002B47BF /* MenuViewController.swift in Sources */,
 				92E148A6262EA8BE000C91BE /* ViewController.swift in Sources */,
@@ -480,6 +494,8 @@
 				923190F22637179100705CA5 /* PreviewTableViewCell.swift in Sources */,
 				92E148A2262EA8BE000C91BE /* AppDelegate.swift in Sources */,
 				9273D7F5262EC20400D72707 /* ForgetPasswordViewController.swift in Sources */,
+				92FFA97626392CCD00CC36A8 /* AccountViewController.swift in Sources */,
+				92AB4E9326382A73000B50D5 /* OrderInfoTableViewCell.swift in Sources */,
 				92AB4E842637F77D000B50D5 /* OrdersViewController.swift in Sources */,
 				922A9403262EB3A300AB0EED /* LoginViewController.swift in Sources */,
 				92E148A4262EA8BE000C91BE /* SceneDelegate.swift in Sources */,
