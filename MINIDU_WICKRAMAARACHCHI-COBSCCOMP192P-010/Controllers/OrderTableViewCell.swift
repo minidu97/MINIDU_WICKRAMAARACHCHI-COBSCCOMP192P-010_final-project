@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class OrderTableViewCell: UITableViewCell {
 
+    var ref = Database.database().reference()
     @IBOutlet weak var CusName: UILabel!
     @IBOutlet weak var OrderId: UILabel!
     @IBOutlet weak var btnReject: UIButton!
@@ -17,7 +19,12 @@ class OrderTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    @IBAction func btnReject(_ sender: UIButton) {
+        self.ref.child("Orders/\(sender.tag)/Status").setValue("Cancel")
+    }
+    @IBAction func btnAccept(_ sender: UIButton) {
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -53,7 +53,7 @@ class OrderInfoViewController: UIViewController , UITableViewDelegate, UITableVi
     func getItemDetails() {
         
         let ref = Database.database().reference()
-        ref.child("Orders").child("\(OrderId ?? "")").child("OrderedItems").observe(.value, with:{
+        ref.child("Orders").child("\(OrderId ?? "")").child("Items").observe(.value, with:{
             (snapshot) in
                         
             if let data = snapshot.value {
