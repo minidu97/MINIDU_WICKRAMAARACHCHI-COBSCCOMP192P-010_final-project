@@ -19,7 +19,6 @@ public struct NewOrder: Codable {
         case status
     }
 }
-//new Orders
 public struct ReadyOrder: Codable {
     let id : String?
     let cusName : String?
@@ -38,10 +37,7 @@ class OrdersViewController: UIViewController , UITableViewDelegate, UITableViewD
     @IBOutlet weak var OrderTblView: UITableView!
     var newOrders = [NewOrder]()
     var readyOrder = [ReadyOrder]()
-    
-    
     var ref = Database.database().reference()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         OrderTblView.delegate = self;

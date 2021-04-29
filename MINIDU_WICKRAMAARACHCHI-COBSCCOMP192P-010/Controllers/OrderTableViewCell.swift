@@ -20,9 +20,10 @@ class OrderTableViewCell: UITableViewCell {
         // Initialization code
     }
     @IBAction func btnReject(_ sender: UIButton) {
-        self.ref.child("Orders/\(sender.tag)/Status").setValue("Cancel")
+        self.ref.child("Orders/\(sender.tag)").removeValue()
     }
     @IBAction func btnAccept(_ sender: UIButton) {
+        self.ref.child("Orders/\(sender.tag)/Status").setValue("Arriving")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
