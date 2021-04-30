@@ -309,7 +309,7 @@
                             <constraint firstItem="CjJ-gL-gXc" firstAttribute="top" secondItem="2WS-PX-qMY" secondAttribute="bottom" constant="5" id="vmJ-14-M8Z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Store" id="uQ0-DE-N44"/>
+                    <tabBarItem key="tabBarItem" title="Store" image="cart" catalog="system" id="uQ0-DE-N44"/>
                     <connections>
                         <outlet property="Catogary" destination="ivr-yt-aBb" id="aV3-GI-0n9"/>
                         <outlet property="Menu" destination="ArK-F4-xg9" id="6rj-MN-mAE"/>
@@ -410,6 +410,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="1" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="Aha-j5-rh6" kind="relationship" relationship="viewControllers" id="rFp-W9-sB0"/>
@@ -534,7 +535,7 @@
                             <constraint firstAttribute="bottom" secondItem="xTI-Wg-unG" secondAttribute="bottom" constant="83" id="hxT-C9-JVr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Order" id="lOw-s3-FDU"/>
+                    <tabBarItem key="tabBarItem" title="Order" image="plus" catalog="system" id="lOw-s3-FDU"/>
                     <connections>
                         <outlet property="OrderTblView" destination="xTI-Wg-unG" id="uay-tM-6TF"/>
                     </connections>
@@ -828,7 +829,7 @@
                             <constraint firstItem="LYd-zo-niz" firstAttribute="top" secondItem="cUf-Uh-w2K" secondAttribute="top" constant="4" id="xre-CZ-qLH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="fgP-rC-lYR"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" id="fgP-rC-lYR"/>
                     <connections>
                         <outlet property="EndDatePicker" destination="0gd-dj-5VK" id="jkS-u3-7tS"/>
                         <outlet property="StartDatePicker" destination="Zrf-q7-gXg" id="FaI-ss-Jq4"/>
@@ -1197,10 +1198,13 @@
     </scenes>
     <resources>
         <image name="cafê manager" width="48" height="48"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
