@@ -10,6 +10,7 @@ target 'MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'AlamofireImage'
 
   target 'MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010Tests' do
     inherit! :search_paths

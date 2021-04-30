@@ -45,10 +45,11 @@ class OrderInfoViewController: UIViewController , UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
     }
     @IBAction func btnBack(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "Order" )
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "menu" )
         vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        present(vc, animated: true)*/
+        self.dismiss(animated: true, completion: nil)
     }
     func getItemDetails() {
         

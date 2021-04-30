@@ -6,17 +6,88 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import AlamofireImage
+public struct FoodItems: Codable {
+    let price :String?
+    let catogary :String?
+    let description :String?
+    let discount :String?
+    let foodname :String?
+    let image :String?
+    
+    enum CodingKeys: String, CodingKey {
+        case price
+        case catogary
+        case description
+        case discount
+        case foodname
+        case image
+        
+    }
+}
 
 
-class PreviewViewController: UIViewController{
+class PreviewViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+
 
     @IBOutlet weak var PreviewTable: UITableView!
+    var fooditems = [FoodItems]();
+    var ref: DatabaseReference!
+    var price = "Rs. ";
+    var Percentage = " %"
+    var ending = ".00"
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        PreviewTable.delegate = self;
+        PreviewTable.dataSource = self;
+        getfooditemDetails()
+        //self.CatogaryTableView.reloadData()
         
         // Do any additional setup after loading the view.
     }
+    func getfooditemDetails() {
+        
+        let ref = Database.database().reference()
+        ref.child("Items").observe(.value, with:{
+            (snapshot) in
+                        
+            if let data = snapshot.value {
+                if let fooditem = data as? [String: Any]{
+                    self.fooditems.removeAll();
+                    for itemInfo in fooditem {
+                        if let fooditem = itemInfo.value as? [String: Any]{
+                            let singleFoodItem = FoodItems(
+                                price: fooditem["Price"] as? String, catogary: fooditem["category"] as? String, description: fooditem["description"] as? String, discount: fooditem["discount"] as? String, foodname: fooditem["foodName"] as? String, image: fooditem["image"] as? String)
+                            self.fooditems.append(singleFoodItem)
+                                    }
+                                }
+                                self.PreviewTable.reloadData()
+                            }
+                        }
+                    })
+                }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(tableView);
+        print("Row At: \( self.fooditems.count)")
+        return fooditems.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let Itemcell = PreviewTable.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! PreviewTableViewCell
+        Itemcell.FoodName.text = self.fooditems[indexPath.row].foodname ;
+        Itemcell.FoodDescription.text = self.fooditems[indexPath.row].description;
+        Itemcell.Percentage.text = self.fooditems[indexPath.row].discount! + Percentage;
+        Itemcell.Price.text = price + self.fooditems[indexPath.row].price! + ending;
+        if let url = URL(string: self.fooditems[indexPath.row].image ?? "") {
+            Itemcell.ImageView.af_setImage(withURL: url)
+                }
+        return Itemcell;
+    }
+    
     
 
     /*

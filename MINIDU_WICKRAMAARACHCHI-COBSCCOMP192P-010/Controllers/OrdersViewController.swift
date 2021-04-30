@@ -113,6 +113,7 @@ class OrdersViewController: UIViewController , UITableViewDelegate, UITableViewD
                                         if( "New" == status)
                                         {
                                             self.newOrders.append(NewOrder(id: orderInfo["OrderId"] as? String,cusName: orderInfo["Customer"] as? String, status: orderInfo["Status"] as? String));
+                                            
                                         }
                                         else{
                                             self.readyOrder.append(ReadyOrder(id: orderInfo["OrderId"] as? String,cusName: orderInfo["Customer"] as? String, status: orderInfo["Status"] as? String));
@@ -126,12 +127,17 @@ class OrdersViewController: UIViewController , UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
         UserDefaults.standard.set(self.readyOrder[indexPath.row].id, forKey: "OrderId")
         UserDefaults.standard.set(self.readyOrder[indexPath.row].cusName, forKey: "CustomerName")
+        print(indexPath.section)
+        if(indexPath.section == 0){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "OrderInfoView" )
         vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+            present(vc, animated: true)}
+    
+        
     }
 
     /*
