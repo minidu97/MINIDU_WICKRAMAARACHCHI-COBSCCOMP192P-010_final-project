@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ltq-tn-PbQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -29,6 +29,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-UG-1uk">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="EmailInput"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="IYK-HI-VJP"/>
                                         </constraints>
@@ -40,6 +41,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HFG-Rv-hJ2">
                                         <rect key="frame" x="0.0" y="50" width="374" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="PasswordInput"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="sdn-rr-0la"/>
                                         </constraints>
@@ -51,6 +53,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-0B-9Im">
                                 <rect key="frame" x="40" y="352" width="334" height="40"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnLogin"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="uqI-6L-6aQ"/>
                                 </constraints>
