@@ -39,7 +39,7 @@ class OrderInfoViewController: UIViewController , UITableViewDelegate, UITableVi
         tblOrderdInfo.dataSource = self;
         getItemDetails()
         getLocationDetails()
-        calTime()
+        //calTime()
 
 
         // Do any additional setup after loading the view.
@@ -82,16 +82,16 @@ class OrderInfoViewController: UIViewController , UITableViewDelegate, UITableVi
              if let data = snapshot.value {
                  if let LocationDetails = data as? [String: Any]{
                      for itemInfo in LocationDetails {
-                        self.Longitude = (LocationDetails["Longitude"] as! NSString).doubleValue
-                        self.Latitude = (LocationDetails["Latitude"] as! NSString).doubleValue
+                        self.calTime(latitude: (LocationDetails["Latitude"] as! NSString).doubleValue, longitude: (LocationDetails["Longitude"] as! NSString).doubleValue);
+                        //print(self.Longitude)
                                  }
                                  self.tblOrderdInfo.reloadData()
                              }
              }
             })
     }
-    func calTime(){
-        if(Longitude > 65.78 && Latitude > 45.45){
+    func calTime(latitude: Double, longitude: Double){
+        if(latitude > 65.78 && longitude > 45.45){
             TimeRemaining = "15 min"
         }
         else{
