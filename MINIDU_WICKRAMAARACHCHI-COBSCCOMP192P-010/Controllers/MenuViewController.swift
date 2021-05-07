@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Foundation
 import Firebase
 import FirebaseStorage
 
+
+
 class MenuViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
-    
 
     var catogaries = [Catogaries]();
     @IBOutlet weak var txtName: UITextField!
@@ -112,6 +114,11 @@ class MenuViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
               }
+        if !isValidatePrice(price: txtPrice.text ?? ""){
+                    let alert = UIAlertController(title: "Error", message: "Please Check Your Enterd price format", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+            }
         else{
             self.ref.child("Items").child("\(randomInt)").setValue(
                 ["foodName": self.foodName,
@@ -129,6 +136,12 @@ class MenuViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             txtPrice.text = "";
         }
     }
+    func isValidatePrice(price: String) -> Bool {
+                    let NUMBER_REGEX = #"^[0-9]*$"#
+                     let numberTest = NSPredicate(format: "SELF MATCHES %@", NUMBER_REGEX)
+                     let result = numberTest.evaluate(with: price)
+                     return result
+                }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
             picker.dismiss(animated: true, completion: nil)

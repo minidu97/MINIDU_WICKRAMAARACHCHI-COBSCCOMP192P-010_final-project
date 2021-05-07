@@ -19,8 +19,6 @@
 		923190F22637179100705CA5 /* PreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923190F12637179100705CA5 /* PreviewTableViewCell.swift */; };
 		9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246F432262EB6E200AD4315 /* SignUpViewController.swift */; };
 		9268C32C263C00B4008E2877 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268C32B263C00B4008E2877 /* LoginFlow.swift */; };
-		9268C33C263C03AD008E2877 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268C33B263C03AD008E2877 /* AuthenticationService.swift */; };
-		9268C33D263C03AD008E2877 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268C33B263C03AD008E2877 /* AuthenticationService.swift */; };
 		9268C342263C0622008E2877 /* LoginUITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268C341263C0622008E2877 /* LoginUITesting.swift */; };
 		9273D7F5262EC20400D72707 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273D7F4262EC20400D72707 /* ForgetPasswordViewController.swift */; };
 		928F070F26328FBB0056DC46 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928F070E26328FBB0056DC46 /* StoreViewController.swift */; };
@@ -76,7 +74,6 @@
 		923190F12637179100705CA5 /* PreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTableViewCell.swift; sourceTree = "<group>"; };
 		9246F432262EB6E200AD4315 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9268C32B263C00B4008E2877 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
-		9268C33B263C03AD008E2877 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		9268C341263C0622008E2877 /* LoginUITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITesting.swift; sourceTree = "<group>"; };
 		9273D7F4262EC20400D72707 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		928F070E26328FBB0056DC46 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
@@ -168,14 +165,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		9268C322263C0005008E2877 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				9268C33B263C03AD008E2877 /* AuthenticationService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		92D5A12F2637CDC2002B47BF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +198,6 @@
 		92E148A0262EA8BE000C91BE /* MINIDU_WICKRAMAARACHCHI-COBSCCOMP192P-010 */ = {
 			isa = PBXGroup;
 			children = (
-				9268C322263C0005008E2877 /* Services */,
 				92D5A12F2637CDC2002B47BF /* Classes */,
 				922A93FE262EB38A00AB0EED /* Controllers */,
 				92E148A1262EA8BE000C91BE /* AppDelegate.swift */,
@@ -505,7 +493,6 @@
 				92AB4E892637F7A2000B50D5 /* OrderTableViewCell.swift in Sources */,
 				92AB4E8E26382A29000B50D5 /* OrderInfoViewController.swift in Sources */,
 				9246F433262EB6E200AD4315 /* SignUpViewController.swift in Sources */,
-				9268C33C263C03AD008E2877 /* AuthenticationService.swift in Sources */,
 				92D5A1392637CED8002B47BF /* MenuViewController.swift in Sources */,
 				92E148A6262EA8BE000C91BE /* ViewController.swift in Sources */,
 				923190ED2637175C00705CA5 /* PreviewViewController.swift in Sources */,
@@ -527,7 +514,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9268C33D263C03AD008E2877 /* AuthenticationService.swift in Sources */,
 				92E148BC262EA8BF000C91BE /* MINIDU_WICKRAMAARACHCHI_COBSCCOMP192P_010Tests.swift in Sources */,
 				9268C32C263C00B4008E2877 /* LoginFlow.swift in Sources */,
 			);

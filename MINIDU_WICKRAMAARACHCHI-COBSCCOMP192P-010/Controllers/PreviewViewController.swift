@@ -27,13 +27,22 @@ public struct FoodItems: Codable {
         
     }
 }
-
+struct GroupFoodItems{
+    var key:String
+    var item:[FoodItems]
+}
 
 class PreviewViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
 
     @IBOutlet weak var PreviewTable: UITableView!
-    var fooditems = [FoodItems]();
+    var fooditems: [FoodItems] = [
+      
+   ]
+    
+    var groupfoodItems: [GroupFoodItems] = [
+    
+    ]
     var ref: DatabaseReference!
     var price = "Rs. ";
     var Percentage = " %"
@@ -65,24 +74,40 @@ class PreviewViewController: UIViewController , UITableViewDelegate, UITableView
                             self.fooditems.append(singleFoodItem)
                                     }
                                 }
+                        let groupByCategory = Dictionary(grouping: self.fooditems) { (items) -> String in
+                            return (items.catogary ?? "")
+                        }
+     
+                        groupByCategory.forEach({(key,val) in
+     
+                            self.groupfoodItems.append(GroupFoodItems.init(key: key, item: val))
+                        })
                                 self.PreviewTable.reloadData()
                             }
                         }
                     })
                 }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        groupfoodItems.count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if(groupfoodItems.count > 0){
+            return groupfoodItems[section].key
+        }
+        return ""
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(tableView);
-        print("Row At: \( self.fooditems.count)")
-        return fooditems.count;
+        return groupfoodItems[section].item.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Itemcell = PreviewTable.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! PreviewTableViewCell
-        Itemcell.FoodName.text = self.fooditems[indexPath.row].foodname ;
-        Itemcell.FoodDescription.text = self.fooditems[indexPath.row].description;
-        Itemcell.Percentage.text = self.fooditems[indexPath.row].discount! + Percentage;
-        Itemcell.Price.text = price + self.fooditems[indexPath.row].price! + ending;
-        if let url = URL(string: self.fooditems[indexPath.row].image ?? "") {
+        Itemcell.FoodName.text = groupfoodItems[indexPath.section].item[indexPath.row].foodname ;
+        Itemcell.FoodDescription.text = groupfoodItems[indexPath.section].item[indexPath.row].description;
+        Itemcell.Percentage.text = groupfoodItems[indexPath.section].item[indexPath.row].discount! + Percentage;
+        Itemcell.Price.text = price + groupfoodItems[indexPath.section].item[indexPath.row].price! + ending;
+        if let url = URL(string: groupfoodItems[indexPath.section].item[indexPath.row].image ?? "") {
             Itemcell.ImageView.af_setImage(withURL: url)
                 }
         return Itemcell;
